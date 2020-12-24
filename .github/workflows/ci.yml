@@ -14,11 +14,11 @@ jobs:
     - name: Install and Build
       run: |
         npm install
-        npm run-script build
+        ng build --prod --output-path docs
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@releases/v3
       with: 
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         BRANCH: crosschain-swap-pages
         FOLDER: build
-        BUILD_SCRIPT: npm install && npm run build --configuration=production
+        BUILD_SCRIPT: npm install && ng build --prod --output-path docs
