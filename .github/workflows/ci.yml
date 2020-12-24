@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
-      uses: actions/checkout@master # If you're using actions/checkout@v2 you must set persist-credentials to false in most cases for the deployment to work correctly.
+      uses: actions/checkout@v2 # If you're using actions/checkout@v2 you must set persist-credentials to false in most cases for the deployment to work correctly.
       with:
         persist-credentials: false
     - name: Install and Build
@@ -21,4 +21,4 @@ jobs:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         BRANCH: crosschain-swap-pages
         FOLDER: build
-        BUILD_SCRIPT: npm install && ng build --prod --output-path docs --base-href QLCTracker
+        BUILD_SCRIPT: npm install && ng build --prod --output-path docs --base-href https://beichenzhidi.github.io/QLCTracker/
