@@ -21,4 +21,4 @@ jobs:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         BRANCH: crosschain-swap-pages
         FOLDER: build
-        BUILD_SCRIPT: npm install && npm run qlc:build
+        BUILD_SCRIPT: npm install && npm run build --configuration=production
