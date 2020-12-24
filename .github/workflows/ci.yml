@@ -21,4 +21,4 @@ jobs:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         BRANCH: crosschain-swap-pages
         FOLDER: build
-        BUILD_SCRIPT: npm install && ng build --prod --output-path docs
+        BUILD_SCRIPT: npm install && ng build --prod --output-path docs --base-href QLCTracker
