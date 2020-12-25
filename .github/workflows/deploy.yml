@@ -39,4 +39,4 @@ jobs:
         with:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           BRANCH: gh-pages
-          FOLDER: deploy_dist/angular-demo
+          FOLDER: deploy_dist
