@@ -19,6 +19,6 @@ jobs:
       uses: JamesIves/github-pages-deploy-action@releases/v3
       with: 
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-        BRANCH: crosschain-swap-pages
+        BRANCH: crosschain-swap-github-pages
         FOLDER: build
         BUILD_SCRIPT: npm install && ng build --configuration=production
