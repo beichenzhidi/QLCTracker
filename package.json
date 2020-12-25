@@ -12,6 +12,8 @@
     "start": "ng serve --open --port=9999",
     "build": "ng build",
     "test": "ng test",
+    "build:ci": "ng build --prod --sourceMap=false --base-href https://beichenzhidi.github.io/QLCTracker/",
+    "test:ci": "ng test --watch=false --code-coverage --source-map true",
     "lint": "ng lint",
     "e2e": "ng e2e",
     "qlc:dev": "ng serve",
