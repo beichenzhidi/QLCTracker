@@ -4,7 +4,7 @@
   "main": "desktop/main.js",
   "author": "QLC Chain Team <admin@qlink.mobi>",
   "description": "QLC Wallet and Explorer",
-  "homepage": "https://explorer.qlcchain.org",
+  "homepage": "https://beichenzhidi.github.io/QLCTracker",
   "license": "MIT",
   
   "scripts": {
