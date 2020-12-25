@@ -14,12 +14,11 @@ jobs:
     - name: Install and Build
       run: |
         npm install
-        npm install -g @angular/cli
-        ng build --prod --output-path docs --base-href https://beichenzhidi.github.io/QLCTracker/
+        npm run-script build
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@releases/v3
       with: 
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         BRANCH: crosschain-swap-pages
         FOLDER: build
-        BUILD_SCRIPT: npm install && ng build --prod --output-path docs --base-href https://beichenzhidi.github.io/QLCTracker/
+        BUILD_SCRIPT: npm install && ng build --configuration=production
